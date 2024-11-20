@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Entradas - Romper el Círculo</title>
+    <link rel="stylesheet" href="css/StylePelicula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body style="background-color: #F2E0D5;">
+
+<div class="container">
+    <header class="text-center my-4">
+        <h1 class="titulo">Romper el Círculo</h1>
+        <p class="subtitulo">Reserva de Entradas</p>
+        <h2 class="subtitulo1">Completa el formulario para reservar tus entradas.</h2>
+    </header>
+
+    <form class="EstiloForm">
+      <div class="mb1">  
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="ciudad">Ciudad</label>
+            <select class="form-select" id="ciudad" required>
+                <option value="">Selecciona una ciudad</option>
+                <option>Mar del Plata</option>
+                <option>Miramar</option>
+                <option>Villa Gesell</option>
+                <option>Pinamar</option>
+                <option>Mar de las Pampas</option>
+                <option>Ostende</option>
+                <option>Valeria del Mar</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="fecha">Fecha</label>
+            <input type="date" class="form-control" id="fecha" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="hora">Hora</label>
+            <select class="form-select" id="hora" required>
+                <option value="19:45">19:45</option>
+                <option value="21:45">21:45</option>
+                <option value="23:45">23:45</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="entradas">Número de Entradas</label>
+            <input type="number" class="form-control" id="entradas" min="1" max="10" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" id="botoncolor">Reservar</button>
+    </div>  
+    </form>
+    <br>
+    <footer class="text-center my-4">
+        <div>
+            <a href="IndexPelicula.html" class="btn btn-primary" id="botoncolor"> Volver a la pagina de la Pelicula </a>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
